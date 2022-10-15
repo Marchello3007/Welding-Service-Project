@@ -1,0 +1,317 @@
+* {box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*** only mobile 1-425px***/ 
+@media(min-width:1px) {
+
+    .header-row {
+        width: 100%;
+        background-color: #fc5a0a;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        color: white;
+        padding: 5px;
+    }
+    
+    .header-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    .header-desktop-menu-butoon {
+        padding: 10px;
+        margin: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+    .header-mobile-menu-butoon {
+        padding: 5px;
+        margin: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .butoon-line-top {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        display: block;
+    }
+
+
+    .header-desktop-menu-butoon:hover .butoon-line-top {
+        left: 0;
+        transition: 0.5s;
+    }
+    .header-mobile-menu-butoon:hover .butoon-line-top {
+        left: 0;
+        transition: 0.5s;
+    }
+    
+    .butoon-line-bottom {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        display: block;
+    }
+
+    .header-desktop-menu-butoon:hover .butoon-line-bottom {
+        right: 0;
+        transition: 0.5s;
+    }
+    .header-mobile-menu-butoon:hover .butoon-line-bottom {
+        right: 0;
+        transition: 0.5s;
+    }
+
+    .header-desktop-menu-butoon:hover {
+        cursor: pointer;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+    .header-mobile-menu-butoon:hover {
+        cursor: pointer;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+    
+    .header-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+// *******    icons    ********
+
+    .header-icons {
+        display: flex;
+        margin: 5px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .icons-line-bottom {
+        bottom: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        display: block;
+        
+    }
+
+    .header-icons:hover .icons-line-bottom {
+        left: 0;
+        transition: 0.5s;
+    }
+
+    .header-icons:hover {
+        cursor: pointer;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+
+    .header-icons :first-child {
+        font-size: 35px;
+        margin: 5px;
+    }
+
+    .only-mobile {
+        display: flex;
+    }
+
+    .only-desktop {
+        display: none;
+    }
+
+
+    .header-icons-back {
+    position: relative;
+    }
+
+    .header-telnumbers-block, .header-messengers-block, .header-contacts-mobile-block, .header-contacts-desktop-block, .header-menu-mobile-block {
+        background-color: #fc5a0a;
+        width: 75vw;
+        position: absolute;
+        z-index: 5;
+        display: grid;
+        grid-row: 1fr 1fr 1fr 1fr;
+        max-height: 0;
+        overflow: hidden;
+        transition: 1.5s;
+    }
+
+    .header-telnumbers-block {
+        top: 53px;
+        right: -5px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .header-messengers-block {
+        top: 53px;
+        right: -60px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .header-contacts-mobile-block {
+        top: 53px;
+        right: -115px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .header-contacts-desktop-block {
+        top: 53px;
+        left: -25px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .header-menu-mobile-block {
+        top: 53px;
+        left: -25px;
+        border-bottom-right-radius: 4px;
+    }
+
+
+
+    .header-telnumber-text, .header-messenger-text, .header-contact-mobile-text, .header-contact-desktop-text, .header-menu-item-mobile-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    .header-telnumber, .header-messenger, .header-contact-mobile, .header-contact-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #fc5a0a;
+        font-size: 25px;
+        a{    
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+
+    .header-menu-item-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1px;
+        padding-bottom: 1px;
+
+        font-size: 25px;
+        a{    
+            color: white;
+            text-decoration: none;
+            padding-left: 50%;
+            padding-right: 50%;
+        };
+    }
+
+
+
+    .header-icons-back:hover .header-telnumbers-block {
+        max-height: 500px;
+    }
+
+    .header-icons-back:hover .header-messengers-block {
+        max-height: 500px;
+    }
+
+    .header-icons-back:hover .header-contacts-mobile-block {
+        max-height: 500px;
+    }
+
+    .header-icons-back:hover .header-contacts-desktop-block {
+        max-height: 500px;
+    }
+
+    .header-icons-back:hover .header-menu-mobile-block {
+        max-height: 500px;
+    }
+
+
+
+    
+    
+}
+
+/*** mobile 426-767px***/ 
+@media(min-width:426px) {
+
+    .header-telnumbers-block, .header-messengers-block, .header-contacts-mobile-block, .header-contacts-desktop-block, .header-menu-mobile-block {
+        width: 50vw;
+    }
+}
+
+
+
+/*** tablet => sm  768-991***/ 
+@media(min-width:768px) {
+    
+    .header-telnumbers-block, .header-messengers-block, .header-contacts-mobile-block, .header-contacts-desktop-block, .header-menu-mobile-block {
+        width: 40vw;
+    }
+
+}
+    
+
+/*** laptop => md 992-1199***/ 
+@media(min-width:992px) {
+    
+    .header-row {
+        height: 95px;
+        grid-template-columns: 10% 65% 25%;
+    }
+
+    .header-left {
+        padding-left: 20px;
+    }
+
+    .header-menu {
+        display: flex;
+    }
+
+    .only-mobile {
+        display: none;
+    }
+
+    .only-desktop {
+        display: flex;
+    }
+
+    .header-telnumbers-block, .header-messengers-block, .header-contacts-mobile-block, .header-contacts-desktop-block, .header-menu-mobile-block {
+        width: 25vw;
+    }
+}
+    
+/*** desktop => lg 1200***/ 
+@media(min-width:1200px) {
+    
+    .header-telnumbers-block, .header-messengers-block, .header-contacts-mobile-block, .header-contacts-desktop-block, .header-menu-mobile-block {
+        width: 20vw;
+    }
+}
+

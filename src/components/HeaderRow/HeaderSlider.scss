@@ -1,0 +1,128 @@
+
+
+// ..................................................
+
+* {box-sizing: border-box;}
+body{margin: 0; padding: 0;}
+
+/*** only mobile 1-425px***/ 
+@media(min-width:1px) {
+
+
+    .header-slider {
+        width: 100%;
+        background-color: #181818;
+        margin-bottom: -7px;
+    }
+    
+    .header-slider-image {
+        width: 100%;
+        opacity: 80%;
+    }
+    
+    .header-slider-text {
+        font-size: 20px;
+        height: 0;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        position: absolute;
+        left: 5%;   
+    }
+    
+    .header-slider-title {
+        position: absolute;
+        animation-name: slider-text-move;
+        animation-duration: 4s; 
+    }
+    .header-slider-description {
+        margin-top: 75px;
+        animation-name: slider-text-fade;
+        animation-duration: 5s; 
+    }
+    
+    @keyframes slider-text-move {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 0;
+        }
+    }
+    
+    @keyframes slider-text-fade {
+        0% {
+            opacity: 0%;
+        }
+        80% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .header-slider-title {
+    line-height: 0.2;
+    }
+   
+}
+
+
+
+/*** mobile 426-767px***/ 
+@media(min-width:426px) {
+
+    .header-slider-text {
+        font-size: 25px;
+        left: 5%;  
+    }
+
+    .header-slider-description {
+        margin-top: 100px;
+    }
+}
+
+
+
+/*** tablet => sm  768-991***/ 
+@media(min-width:768px) {
+
+    .header-slider-text {
+        font-size: 45px;
+        left: 5%;  
+    }
+
+    .header-slider-description {
+        margin-top: 180px;
+    }
+}
+    
+
+/*** laptop => md 992-1199***/ 
+@media(min-width:992px) {
+
+    .header-slider-text {
+        font-size: 60px;
+        left: 5%;  
+    }
+
+    .header-slider-description {
+        margin-top: 230px;
+    }
+}
+    
+/*** desktop => lg 1200***/ 
+@media(min-width:1200px) {
+
+    .header-slider-text {
+        font-size: 70px;
+        left: 5%;  
+    }
+
+    .header-slider-description {
+        margin-top: 290px;
+    }
+}
+

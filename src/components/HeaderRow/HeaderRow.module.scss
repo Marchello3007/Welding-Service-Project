@@ -1,0 +1,39 @@
+* {box-sizing: border-box;}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+// ////  DesktopMenu
+
+.activeDesktopMenuItem {
+    color: white;
+    text-decoration: none;
+    div {
+         border-top: solid white 2px;
+         border-bottom: solid white 2px;
+        }
+}
+
+.noActiveDesktopMenuItem {
+    text-decoration: none;
+    color: white;
+}
+
+
+// ////  MobileMenu
+
+.activeMobileMenuItem {
+    color: white;
+    text-decoration: none;
+}
+
+.noActiveMobileMenuItem {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+

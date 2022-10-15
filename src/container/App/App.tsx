@@ -3,29 +3,50 @@ import CssBaseline from '@mui/material/CssBaseline'
 import Header from 'container/Header/Header'
 import Main from 'container/Main/Main'
 import Footer from 'container/Footer/Footer'
+import { useState } from 'react'
+import ModalPhones from 'components/ModalPhones/ModalPhones'
 
-type Props88 = {
-    title: string
+type Props = {}
+
+type PageLikeStateProps = {
+    [id: number]: boolean
 }
 
-const AppHeader = (props: Props88) => {
-    return <h1>Hello{props.title}</h1>
+type ModalProps = {
+    modalstatus: boolean
+    // setModalActive: (modalstatus: boolean) => void
 }
 
-const AppList = () => {
-    return <div>Bla Bla Bla</div>
-}
+const App = (props: Props) => {
+    const [pageLikeState, setPageLikeState] = useState<PageLikeStateProps>({
+        // 7: true,
+        // 9: true,
+        // 11: true,
+    })
 
-const App = () => {
+    const toggleLikeState = (id: number) => {
+        setPageLikeState((prevState: PageLikeStateProps) => ({
+            ...prevState,
+            [id]: !prevState[id],
+        }))
+    }
+
+    const [modalActive, setModalActive] = useState<ModalProps>({
+        modalstatus: false,
+    })
+
     return (
         <>
             <CssBaseline />
-            <AppHeader title="Yo" />
-            <AppHeader title="Yo Yo" />
-            <AppList />
-
             <Header />
-            <Main />
+            {/* <ModalPhones
+                modalstatus={modalActive.modalstatus}
+                setModalActive={setModalActive}
+            /> */}
+            <Main
+                pageLikeState={pageLikeState}
+                toggleLikeState={toggleLikeState}
+            />
             <Footer />
         </>
     )

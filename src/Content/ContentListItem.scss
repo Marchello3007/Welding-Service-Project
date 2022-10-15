@@ -1,0 +1,47 @@
+// see to TestContentListItem.module.scss
+
+.contentlistitem-container {
+    // background-color: gold;
+    // background-color: ghostwhite;
+    background-color: #fc5a0a;
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 20px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.contentlistitem-content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentlistitem-content {
+    display: grid;
+    grid-template-rows: 10% 30% 60%;
+    width: 300px;
+}
+
+.contentlistitem-content-image {
+    width: 100%;
+}
+
+.contentlistitem-content-text {
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.icon-color {
+    color: white;
+    border: solid white 2px;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    
+}

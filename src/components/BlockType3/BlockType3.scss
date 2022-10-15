@@ -1,0 +1,55 @@
+* {box-sizing: border-box;}
+body{margin: 0; padding: 0;}
+
+/*** only mobile 1-425px***/ 
+@media(min-width:1px) {
+
+    .block-type-3-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }    
+
+    .block-type-3-container-one {
+        justify-self: center;
+        width: 75%;
+    }
+    .block-type-3-container-two {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+
+
+/*** mobile 426-767px***/ 
+@media(min-width:426px) {}
+
+
+
+/*** tablet => sm  768-991***/ 
+@media(min-width:768px) {
+
+    .block-type-3-container {
+        background-color: #e5e5e5;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .block-type-3-container-one {
+        width: 40%;
+    }
+}
+    
+
+/*** laptop => md 992-1199***/ 
+@media(min-width:992px) {}
+    
+/*** desktop => lg 1200***/ 
+@media(min-width:1200px) {}
+
