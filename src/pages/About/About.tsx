@@ -1,7 +1,5 @@
 import ContentList from 'Content/ContentList'
-import contentArray from 'Content/content'
 import contentExtArray from 'Content/contentExt'
-
 import React from 'react'
 import PageTempl from 'components/PageTempl/PageTempl'
 
@@ -39,12 +37,6 @@ const About = ({ pageLikeState, toggleLikeState }: Props) => {
     const currentId1 = 605
     return (
         <>
-            {/* {contentArray
-                .filter(({ id }: ContentProps) => id == Number(currentId1))
-                .map(({ title, image, text }: ContentProps) => (
-                    <PageTempl title={title} image={image} text={text} />
-                ))} */}
-
             {contentExtArray
                 .filter(({ id }: ContentExtProps) => id == Number(currentId1))
                 .map(

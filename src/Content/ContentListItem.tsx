@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import './ContentListItem.scss'
-import classes from './TestContentListItem.module.scss'
+import classes from './ContentListItem.module.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 

@@ -1,7 +1,4 @@
 import contentArray, { Content, getContentObject } from 'Content/content'
-
-import ContentList from 'Content/ContentList'
-import ContentListItem from 'Content/ContentListItem'
 import ContentPage from 'Content/ContentPage'
 import React from 'react'
 import { useParams } from 'react-router-dom'
@@ -48,8 +45,6 @@ const ArticlePage = ({
                         toggleLikeState={toggleLikeState}
                     />
                 ))}
-
-            {/* <div>ArticlePage{idd}</div> */}
         </>
     )
 }

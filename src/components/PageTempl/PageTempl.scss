@@ -4,12 +4,10 @@ body{margin: 0; padding: 0;}
 /*** only mobile 1-425px***/ 
 @media(min-width:1px) {
     .page-templ-container {
-        // background-color: green;
         width: 100%;
 
     }
 
-// //////////////  head-block
     .page-templ-head-block {
         background-color: #e5e5e5;
         width: 100%;
@@ -47,8 +45,6 @@ body{margin: 0; padding: 0;}
         padding-right: 3%;
     }
 
-    // //////////////  additional-block
-
     .page-templ-additional-block {
         width: 100%;
     }
@@ -56,11 +52,9 @@ body{margin: 0; padding: 0;}
     .page-templ-additional-block-dscr{
         text-align: center;
         font-size: 35px;
-
     }
 
     .page-templ-additional-item {
-        // background-color: gray;
         width: 100%;
         display: grid;
         justify-content: center;

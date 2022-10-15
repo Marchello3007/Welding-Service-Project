@@ -1,11 +1,8 @@
+import React from 'react'
 import BlockType1 from 'components/BlockType1/BlockType1'
 import BlockType2 from 'components/BlockType2/BlockType2'
 import BlockType3 from 'components/BlockType3/BlockType3'
-
-import React from 'react'
-import './Home.scss'
 import contentArray from 'Content/content'
-import PageTempl from 'components/PageTempl/PageTempl'
 
 type Props = {}
 

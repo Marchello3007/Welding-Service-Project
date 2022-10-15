@@ -7,7 +7,6 @@ import 'slick-carousel/slick/slick-theme.css'
 type Props = {}
 
 const HeaderSlider = (props: Props) => {
-    // settsngs
     const settings = {
         dots: false,
         fade: true,
@@ -20,7 +19,6 @@ const HeaderSlider = (props: Props) => {
         pauseOnHover: false,
         arrows: false,
     }
-    // settsngs
 
     return (
         <div className="header-slider">

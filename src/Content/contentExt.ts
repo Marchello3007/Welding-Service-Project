@@ -25,9 +25,6 @@ export type ContentExt ={
     const contentExtArray: ContentExt[] = [
     
 
-
-   
-
     // About
     {
         headTitle: "About Us",
@@ -51,23 +48,6 @@ export type ContentExt ={
         category: "about-page",
     }
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
     ]
     

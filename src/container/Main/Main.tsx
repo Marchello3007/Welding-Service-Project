@@ -1,8 +1,5 @@
-import LandingPage from 'components/LandingPage/LandingPage'
-import { type } from 'os'
 import About from 'pages/About/About'
 import ArticlePage from 'pages/ArticlePage/ArticlePage'
-// import ArticlePage2 from 'pages/ArticlePage/ArticlePage'
 import Contacts from 'pages/Contacts/Contacts'
 import Delivery from 'pages/Delivery/Delivery'
 import Fav from 'pages/Fav/Fav'
@@ -78,8 +75,6 @@ const Main = ({ pageLikeState, toggleLikeState }: Props) => {
                         />
                     }
                 />
-
-                <Route path=":id" element={<LandingPage />} />
 
                 <Route
                     path="/fav"

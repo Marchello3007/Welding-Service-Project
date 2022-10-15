@@ -179,8 +179,7 @@ export type Content ={
         category: "home",
     },
 
-    // ////////////////////////////////////////////////////////////////////////////
-
+    
     // Home
     {
         title: "How we work",
@@ -277,16 +276,7 @@ export type Content ={
     id:311,
     category: "fav-page",
 },
-
-
-
-
-
-
-
-
-
-    
+   
     ]
     
     export default contentArray

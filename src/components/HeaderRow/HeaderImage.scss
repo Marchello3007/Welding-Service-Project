@@ -18,15 +18,11 @@ body{
         display: flex;
         align-items: center;
         height: 500px;
-        // background-size: 100% auto;
 
         div {
-            // background-color: aqua;
             padding-left: 50px;
-            // padding-top: 15px;
         }
         .header-title {
-            // margin-top: 15px;
             font-size: 80px;
             line-height: 0.8;
             font-weight: bold;
@@ -34,8 +30,7 @@ body{
         .header-description
         {font-size: 35px;}
     }
-
-    
+ 
 }
 
 /*** mobile 426-767px***/ 

@@ -147,7 +147,6 @@ const HeaderRow = (props: Props) => {
                                 Come to us
                             </div>
                             <div className="header-contact-desktop">
-                                {/* <a href="">Office</a> */}
                                 <Link
                                     className={classes.textDcorationNone}
                                     to={`../4`}
@@ -156,7 +155,6 @@ const HeaderRow = (props: Props) => {
                                 </Link>
                             </div>
                             <div className="header-contact-desktop">
-                                {/* <a href="">Workshop</a> */}
                                 <Link
                                     className={classes.textDcorationNone}
                                     to={`../5`}
@@ -165,7 +163,6 @@ const HeaderRow = (props: Props) => {
                                 </Link>
                             </div>
                             <div className="header-contact-desktop">
-                                {/* <a href="">Warehouse</a> */}
                                 <Link
                                     className={classes.textDcorationNone}
                                     to={`../6`}
@@ -294,7 +291,6 @@ const HeaderRow = (props: Props) => {
                                 Come to us
                             </div>
                             <div className="header-contact-mobile">
-                                {/* <a href="">Office</a> */}
                                 <Link
                                     className={classes.textDcorationNone}
                                     to={`../4`}
@@ -303,7 +299,6 @@ const HeaderRow = (props: Props) => {
                                 </Link>
                             </div>
                             <div className="header-contact-mobile">
-                                {/* <a href="">Workshop</a> */}
                                 <Link
                                     className={classes.textDcorationNone}
                                     to={`../5`}
@@ -312,7 +307,6 @@ const HeaderRow = (props: Props) => {
                                 </Link>
                             </div>
                             <div className="header-contact-mobile">
-                                {/* <a href="">Warehouse</a> */}
                                 <Link
                                     className={classes.textDcorationNone}
                                     to={`../6`}
@@ -338,10 +332,12 @@ const HeaderRow = (props: Props) => {
                                 </a>
                             </div>
                             <div className="header-messenger">
-                                <a href="t.me/+380007777777">Telegram</a>
+                                <a href="viber://chat?number=%2B380007777777">
+                                    Telegram
+                                </a>
                             </div>
                             <div className="header-messenger">
-                                <a href="https://web.whatsapp.com/send/?phone=380677597178">
+                                <a href="viber://chat?number=%2B380007777777">
                                     WhatsApp
                                 </a>
                             </div>
