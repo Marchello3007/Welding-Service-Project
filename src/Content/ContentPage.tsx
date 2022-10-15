@@ -27,10 +27,10 @@ const ContentPage = ({
         <>
             <div className="content-page-container">
                 <div className="content-page-title">
-                    <div></div>
+                    <div className="empty-element"></div>
                     <h2>{title}</h2>
                     <div className="content-page-btn-like">
-                        <Button
+                        {/* <Button
                             variant="outlined"
                             onClick={() => toggleLikeState(id)}
                         >
@@ -39,6 +39,18 @@ const ContentPage = ({
                                 <FavoriteIcon />
                             ) : (
                                 <FavoriteBorderIcon />
+                            )}
+                        </Button> */}
+
+                        <Button onClick={() => toggleLikeState(id)}>
+                            {isLiked ? (
+                                <div className="content-page-icon-color">
+                                    <FavoriteIcon />
+                                </div>
+                            ) : (
+                                <div className="content-page-icon-color">
+                                    <FavoriteBorderIcon />
+                                </div>
                             )}
                         </Button>
                     </div>

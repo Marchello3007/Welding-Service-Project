@@ -1,8 +1,7 @@
-import { Button, Card, CardContent } from '@mui/material'
 import React from 'react'
+import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import './ContentListItem.scss'
-// import './TestContentListItem.module.scss'
 import classes from './TestContentListItem.module.scss'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
@@ -40,16 +39,13 @@ const ContentListItem = ({
                             </Link>
                         </h3>
                         <div className="contentlistitem-content-title-like-btn">
-                            <Button
-                                // variant="outlined"
-                                onClick={() => toggleLikeState(id)}
-                            >
+                            <Button onClick={() => toggleLikeState(id)}>
                                 {isLiked ? (
-                                    <div className="icon-color">
+                                    <div className="contentlistitem-icon-color">
                                         <FavoriteIcon />
                                     </div>
                                 ) : (
-                                    <div className="icon-color">
+                                    <div className="contentlistitem-icon-color">
                                         <FavoriteBorderIcon />
                                     </div>
                                 )}

@@ -294,13 +294,31 @@ const HeaderRow = (props: Props) => {
                                 Come to us
                             </div>
                             <div className="header-contact-mobile">
-                                <a href="">Office</a>
+                                {/* <a href="">Office</a> */}
+                                <Link
+                                    className={classes.textDcorationNone}
+                                    to={`../4`}
+                                >
+                                    Office
+                                </Link>
                             </div>
                             <div className="header-contact-mobile">
-                                <a href="">Workshop</a>
+                                {/* <a href="">Workshop</a> */}
+                                <Link
+                                    className={classes.textDcorationNone}
+                                    to={`../5`}
+                                >
+                                    Workshop
+                                </Link>
                             </div>
                             <div className="header-contact-mobile">
-                                <a href="">Warehouse</a>
+                                {/* <a href="">Warehouse</a> */}
+                                <Link
+                                    className={classes.textDcorationNone}
+                                    to={`../6`}
+                                >
+                                    Warehouse
+                                </Link>
                             </div>
                         </div>
                     </div>
